@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{graphicx}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.25\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Adam}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Krček}}}}} % Last name
+	
+	\vspace{6pt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-0.7cm}
+	\resizebox{\textwidth}{!}{\includegraphics{linktree.pdf}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Ostrava}\\
+	\icon{Phone}{12}{\href{tel:+420734104752}{+420 734 104 752}}\\
+	\icon{At}{12}{\href{mailto:krcek.adam@gmail.com}{krcek.adam@gmail.com}}\\	
+	\icon{Github}{12}{\href{https://github.com/skrcka}{https://github.com/skrcka}}\\	
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	printf("Hello~world!\symbol{92}n"); \\
+	printf("My~name~is~\%s~\%s",~firstName,~lastName); \\
+	printf("I am a computer science bachelors graduate and masters student looking for an interesting part time job.
+	I love cars, motorcycles, meeting new people and working on interesting projects, either on my own or in a team.");\\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Python}{90}
+		\baritem{JS/TS}{85}
+		\baritem{Rust}{75}
+		\baritem{C++}{70}
+		\baritem{C\#}{60}
+		\baritem{PHP}{30}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{6/Linux, 6/Git, 5/Docker, 4/CI, 3/Serverless}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{08.2021 -- now\\\footnotesize{part time}}
+		{Software Enginner}
+		{Profiq s.r.o}
+		{Improved: \textbf{GIT, Jenkins, TeamCity, JS, Svelte, Python, QA, Front-end development}}
+	\entry
+		{04.2021 -- 07.2021\\\footnotesize{part time}}
+		{Junior Developer}
+		{Profiq s.r.o}
+		{Improved: \textbf{GIT, CI, Cypress, Pylenium, JS, Python, Docker, Web scraping, Serverless}}
+	\entry
+		{2019 -- 07.2021\\\footnotesize{part time}}
+		{Computer repairs/sales}
+		{Folimex}
+		{Improved: \textbf{Marketing, Technical knowledge, Communication skills}}
+	\entry
+		{2020\\\footnotesize{personal project}}
+		{Laravel website for housing association}
+		{Bytové Družstvo Aleš}
+		{\href{www.bdales.cz}{bdales.cz}\\Improved: \textbf{Laravel, PHP, Javascript, HTML, Bootstrap}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2022 -- 2024}
+		{Computer Science (Ing.)}
+		{Technical University of Ostrava}
+		{}
+	\entry
+		{2019 -- 2022}
+		{Computer Science (BSc.)}
+		{Technical University of Ostrava}
+		{C, C++, C\#, Python, JS, Rust}
+	\entry
+		{2015 -- 2019}
+		{Graduation}
+		{Wichterlovo Grammar School}
+		{Math, Computer Science, English, Math+}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Czech} - native\\
+	\textbf{English} - proficient\\
+	\textbf{Spanish} - rudimentary\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+
+	Memes\\
+	Sports\\
+	Racing
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.15\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	Czech Red Cross\\
+	Světluška
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
